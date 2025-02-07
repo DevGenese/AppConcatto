@@ -1,2 +1,0 @@
-# AppConcatto
-Aplicativo mobile contatto
