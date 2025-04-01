@@ -4,9 +4,11 @@ import { Text, View } from 'react-native';
 import useAddExpenseViewController from './useAddExpenseViewController';
 import TextField from '~/components/TextField';
 import ButtonStyled from '~/components/ButtonStyled';
+import SelectInput from '~/components/SelectInput';
 
 export default function AddExpenseView() {
-  const { schedule, quantity, setQuantity, handleExpense } = useAddExpenseViewController();
+  const { schedule, quantity, setQuantity, handleExpense, expensesType, setExpenses } =
+    useAddExpenseViewController();
 
   return (
     <View>
@@ -22,14 +24,15 @@ export default function AddExpenseView() {
         }}
       />
       <View style={{ padding: 8, marginTop: 8, justifyContent: 'center' }}>
-        <TextField
+        <SelectInput options={expensesType} labelInput="Tipo de despesa" />
+        {/* <TextField
           label="Tipo de despesa"
           value={quantity}
           onChangeText={setQuantity}
           placeholder="Selecione"
           error={false}
           helperText={'Tipo de despesa'}
-        />
+        /> */}
         <TextField
           label="Quantidade"
           value={quantity}

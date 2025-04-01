@@ -28,6 +28,11 @@ export interface IResponseLogin {
   user: IUser;
 }
 
+export interface ISelect {
+  id: number;
+  name: string;
+}
+
 const UserContext = React.createContext<any>({
   user: 0,
   SignIn: (email: string, password: string) => {},

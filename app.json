@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "AppConcatto",
-    "slug": "app-concatto",
+    "name": "Concatto Consultoria",
+    "slug": "concatto-consultoria",
+    "owner": "dev-genese",
     "newArchEnabled": true,
     "version": "1.0.0",
     "platforms": ["ios", "android"],
@@ -41,6 +42,11 @@
     "androidStatusBar": {
       "backgroundColor": "#000",
       "translucent": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c35b4703-a58b-4c88-b365-7f487ce9d80d"
+      }
     }
   }
 }
